@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+body {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Lobster", sans-serif;
+}
+:root {
+  --primary-color: grey;
+}
+
+* {
+  text-decoration: none;
+  margin: 0%;
+  padding: 0%;
+}
+
+header {
+  background: var(--primary-color);
+  color: white;
+  font-size: 25px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  min-height: calc(100vh - 200px);
+  justify-content: center;
+}
+
+footer {
+  height: 100px;
+  background: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+footer h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.main {
+  min-height: calc(100vh - 200px);
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.textarea {
+  margin: 1rem 0;
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+}
+
+.textarea:focus {
+  outline: none !important;
+  border: 1px solid var(--primary-color);
+  box-shadow: 0 0 10px #719ece;
+}
+
+.button {
+  border: 1px solid var(--primary-color);
+  background-color: transparent;
+  font-family: inherit;
+  font-size: 1.1rem;
+  padding: 10px 25px;
+  cursor: pointer;
+  color: black;
+  transition: all 0.5s;
+}
+.button:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.translation-heading {
+  font-size: 1.1rem;
+  padding: 1rem 0;
+}
+
+.translated {
+  border: 2px dotted var(--primary-color);
+  width: 100%;
+  height: 80px;
+  margin-bottom: 1rem;
+  text-align: left;
+  padding: 10px 20px;
+}
+
+@media (max-width: 768px) {
+  .main {
+    margin: 30px;
+    min-height: calc(100vh - 200px);
+  }
+}
